@@ -18,7 +18,6 @@ const LoginForm = () => {
 
   useEffect(() => {
     if (user) {
-      // router.replace("/")
       router.replace('/', undefined, { shallow: true });
       history.replaceState(null, '', '/');
     } else {
